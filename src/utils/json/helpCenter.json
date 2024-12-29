@@ -1,0 +1,12 @@
+[
+    {
+        "id":1,
+        "title":"Nasıl Üye Olabilirim?",
+        "content":"Üye olmak için yapmanız gereken tek şey, sağ üst köşede bulunan 'Üye Ol' butonuna tıklamak ve gerekli bilgileri doldurmak. Üyelik işleminiz tamamlandıktan sonra, üye girişi yaparak alışveriş yapabilirsiniz."
+    },
+    {
+        "id":2,
+        "title":"Nasıl Arkadaşıma Para Gönderebilirim?",
+        "content":"Arkadaşınıza para göndermek için yapmanız gereken tek şey, sağ üst köşede bulunan 'Para Gönder' butonuna tıklamak ve gerekli bilgileri doldurmak. Para gönderme işleminiz tamamlandıktan sonra, arkadaşınıza para göndermiş olacaksınız."
+    }
+]

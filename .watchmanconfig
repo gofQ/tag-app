@@ -1,1 +1,12 @@
-{}
+{
+    "ignore_dirs": [
+      "node_modules",
+      ".git",
+      "ios",
+      "android"
+    ],
+    "suppress_stack_traces": true,
+    "gc_age_seconds": 1800,
+    "log_level": "error"
+  }
+  

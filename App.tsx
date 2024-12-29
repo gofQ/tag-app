@@ -4,8 +4,12 @@ import Root from './src/router/Root'
 import { Provider } from 'react-redux'
 import store from './src/redux/store'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
+import { LogBox } from 'react-native'
+
+LogBox.ignoreAllLogs(true)
 
 const App = () => {
+
   return (
     <>
     <StatusBar barStyle="light-content" backgroundColor={"#000"} />

@@ -3,15 +3,14 @@ import React, { memo } from 'react'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import FAIcon from 'react-native-vector-icons/FontAwesome6'
 import FIcon from 'react-native-vector-icons/FontAwesome5'
-import { color } from '../../utils/constants'
+import { color, fonts } from '../../utils/constants'
 
 
 type Props={
     props:any,
     notify?:boolean,
     canGoBack?:boolean,
-    title?:string
-
+    title?:string,
 }
 
 
@@ -22,9 +21,9 @@ const Header:React.FC<Props> = ({props,title,notify,canGoBack}) => {
         {
             canGoBack ? <FAIcon name='arrow-left-long' size={24} color={color.primary} onPress={() => props.navigation.goBack()} /> : <View style={{width:24}}/>
         }
-        <Text>{title?? ''}</Text>
+        <Text style={[fonts.medium,{color:'#000',fontSize:16}]}>{title?? ''}</Text>
         {
-            notify ? <FIcon name='bell' size={24} color={color.primary}/> : <View style={{width:24}}/>
+            notify ? <FIcon name='bell' size={24} color={color.primary} onPress={()=>props.navigation.navigate('Notifications')} /> : <View style={{width:24}}  />
         }
     </View>
   )

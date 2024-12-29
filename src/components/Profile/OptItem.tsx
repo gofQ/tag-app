@@ -21,6 +21,10 @@ const OptItem: React.FC<Props> = ({title,navigation}) => {
         navigation.navigate('Wallet');
         } else if (title === 'Kampanyalar') {
         navigation.navigate('Campaign');
+        } else if (title === 'Ayarlar') {
+        navigation.navigate('Settings');
+        } else if (title === 'Yardım Merkezi') {
+        navigation.navigate('SupportCenter');
         }
     };
 
