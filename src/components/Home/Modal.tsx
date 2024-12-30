@@ -6,6 +6,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import axios from 'axios'
 import { useRentScooterMutation } from '../../redux/services/rental'
 import { useIncrementTagByLocationMutation } from '../../redux/services/funcs'
+import { GOOGLEMAPSAPIKEY } from '../../utils/config'
 
 
 type Props={
@@ -84,7 +85,7 @@ const Modal:React.FC<Props> = ({startRide,funcStartRide,data,wannaMarti}) => {
       
         try {
           const response = await axios.get(
-            `https://maps.googleapis.com/maps/api/geocode/json?latlng=${selectedMarti.latitude},${selectedMarti.longitude}&key=AIzaSyBfvd2pQqcFew7rgDjfeJtbm4B1YtbmpG8`
+            `https://maps.googleapis.com/maps/api/geocode/json?latlng=${selectedMarti.latitude},${selectedMarti.longitude}&key=${GOOGLEMAPSAPIKEY}`
           );
       
           if (response.data.results && response.data.results.length > 0) {
